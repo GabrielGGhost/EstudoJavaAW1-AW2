@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name="formCadastroUsuario" method="GET" action="lerdados">
+		<label>
+			Nome:
+			<input type="text" name="txtNome"/>
+		</label>
+		<label>
+			Email:
+			<input type="email" name="txtNome"/>
+		</label>
+	</form>
+</body>
+</html>
