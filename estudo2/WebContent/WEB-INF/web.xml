@@ -9,9 +9,7 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
-  <context-param>
-    <description>Servidor padrão de banco de dados</description>
-    <param-name>database_default_server</param-name>
-    <param-value>127.0.0.1</param-value>
-  </context-param>
+
+
+
 </web-app>
