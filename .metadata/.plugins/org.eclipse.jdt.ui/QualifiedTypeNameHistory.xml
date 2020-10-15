@@ -3,6 +3,20 @@
 <fullyQualifiedTypeName name="org.apache.jasper.compiler.Node.DoBodyAction"/>
 <fullyQualifiedTypeName name="br.com.estudo.model.Usuario"/>
 <fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
-<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="br.com.estudo.model.Cliente"/>
+<fullyQualifiedTypeName name="com.estudo.model.Usuario"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+<fullyQualifiedTypeName name="org.apache.jasper.runtime.HttpJspBase"/>
+<fullyQualifiedTypeName name="org.apache.jasper.runtime.JspSourceDependent"/>
+<fullyQualifiedTypeName name="java.util.Vector"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="javax.servlet.ServletException"/>
+<fullyQualifiedTypeName name="javax.servlet.jsp.PageContext"/>
+<fullyQualifiedTypeName name="javax.servlet.jsp.SkipPageException"/>
+<fullyQualifiedTypeName name="javax.servlet.jsp.JspWriter"/>
+<fullyQualifiedTypeName name="javax.servlet.jsp.JspFactory"/>
 </qualifiedTypeNameHistroy>

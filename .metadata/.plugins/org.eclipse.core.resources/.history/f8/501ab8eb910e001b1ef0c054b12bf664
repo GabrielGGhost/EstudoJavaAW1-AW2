@@ -1,0 +1,71 @@
+package com.estudo.model;
+
+public class Usuario {
+
+	private Integer id;
+	private String nome;
+	private String email;
+	private String telefone;
+	private String usuario;
+	private String senha;
+	private boolean ativo;
+	
+	public Usuario() {
+
+	}
+	
+	public Usuario(String nome, String email, String telefone, String usuario, String senha,
+			boolean ativo) {
+		super();
+		this.setNome(nome);
+		this.setEndereco(email);
+		this.setTelefone(telefone);
+		this.setUsuario(usuario);
+		this.setSenha(senha);
+		this.setAtivo(ativo);
+	}
+	
+	public Integer getId() {
+		return this.id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public String getNome() {
+		return this.nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public String getEndereco() {
+		return this.email;
+	}
+	public void setEndereco(String email) {
+		this.email = email;
+	}
+	public String getTelefone() {
+		return this.telefone;
+	}
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+	public String getUsuario() {
+		return this.usuario;
+	}
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
+	}
+	public String getSenha() {
+		return this.senha;
+	}
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+	public boolean getAtivo() {
+		return this.ativo;
+	}
+	public void setAtivo(boolean ativo) {
+		this.ativo = ativo;
+	}
+}
