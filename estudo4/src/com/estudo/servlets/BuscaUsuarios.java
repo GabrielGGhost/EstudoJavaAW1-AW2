@@ -48,13 +48,13 @@ public class BuscaUsuarios extends HttpServlet {
 								  "---",
 								  "Rua do osvaldo, 327");
 		usuarios[1] = new Usuario("gcUser",
-				  "gcUser@email.com",
-				  "159966325",
-				  "Rua do mario, 327");
+								  "gcUser@email.com",
+								  "159966325",
+								  "Rua do mario, 327");
 		usuarios[2] = new Usuario("ajUser",
-				  "ajUser@email.com",
-				  "157785478",
-				  "Rua do osvaldo, 327");
+								  "ajUser@email.com",
+								  "157785478",
+								  "Rua do osvaldo, 327");
 		
 		request.setAttribute("users", usuarios);
 		

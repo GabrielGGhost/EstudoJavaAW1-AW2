@@ -1,0 +1,5 @@
+package estudo5;
+
+public class LoginFailedException extends ServletException {
+
+}

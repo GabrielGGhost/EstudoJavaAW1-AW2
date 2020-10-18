@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	
+	<form action="validaLoginException" name="formLogin" method="GET">
+		<label>
+			Usuário: 
+			<input type="text" name="txtNome"/>
+		</label>
+		<br>
+		<label>
+			Senha: 
+			<input type="password" name="txtSenha"/>
+		</label>
+	</form>
+</body>
+</html>
