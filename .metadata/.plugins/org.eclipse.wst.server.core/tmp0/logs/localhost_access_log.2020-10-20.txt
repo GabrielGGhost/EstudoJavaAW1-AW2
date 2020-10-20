@@ -62,3 +62,11 @@
 0:0:0:0:0:0:0:1 - - [20/Oct/2020:14:25:45 -0300] "GET /estudo6/ExemploEl.jsp HTTP/1.1" 200 1964
 0:0:0:0:0:0:0:1 - - [20/Oct/2020:14:26:06 -0300] "GET /estudo6/ExemploEl.jsp HTTP/1.1" 200 1963
 0:0:0:0:0:0:0:1 - - [20/Oct/2020:14:26:32 -0300] "GET /estudo6/ExemploEl.jsp HTTP/1.1" 200 2018
+0:0:0:0:0:0:0:1 - - [20/Oct/2020:16:05:46 -0300] "GET /estudo7 HTTP/1.1" 404 1083
+0:0:0:0:0:0:0:1 - - [20/Oct/2020:16:06:01 -0300] "GET /estudo7/acessandoDados.jsp HTTP/1.1" 404 1102
+127.0.0.1 - - [20/Oct/2020:16:06:16 -0300] "GET / HTTP/1.1" 404 1076
+0:0:0:0:0:0:0:1 - - [20/Oct/2020:16:06:26 -0300] "GET /estudo7/acessandoDados.jsp HTTP/1.1" 200 307
+0:0:0:0:0:0:0:1 - - [20/Oct/2020:16:08:19 -0300] "GET /estudo7/acessandoDados.jsp HTTP/1.1" 200 396
+0:0:0:0:0:0:0:1 - - [20/Oct/2020:16:08:40 -0300] "GET /estudo7/acessandoDados.jsp HTTP/1.1" 200 396
+0:0:0:0:0:0:0:1 - - [20/Oct/2020:16:09:02 -0300] "GET /estudo7/acessandoDados.jsp HTTP/1.1" 200 383
+0:0:0:0:0:0:0:1 - - [20/Oct/2020:16:12:14 -0300] "GET /estudo7/acessandoDados.jsp HTTP/1.1" 200 450
