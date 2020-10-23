@@ -1,0 +1,74 @@
+package com.estudo.servlets;
+
+import com.estudo.model.Cliente;
+import com.estudo.util.GlobalcodeException;
+
+
+import java.io.IOException;
+import java.util.List;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class BuscaCliente
+ */
+@WebServlet("/buscaCliente")
+public class BuscaCliente extends HttpServlet {
+       
+   protected void processRequest(HttpServletRequest request,
+		   						 HttpServletResponse response)
+		   						throws ServletException, IOException{
+	   
+		List<Cliente> clientes = null;
+		   
+		   String nome = request.getParameter("nome");
+		   
+		   if(nome.contains("João")){
+			   
+			   Cliente u1 = new Cliente("João Mario","asdasd","asdas");
+			   Cliente u2 = new Cliente("João Alberto","asdasd","asdas");
+			   Cliente u3 = new Cliente("João Henrique","asdasd","asdas");
+			   
+			   clientes.add(u1);
+			   clientes.add(u2);
+			   clientes.add(u3);
+		   } else if(nome.contains("Maria")){
+			   Cliente u1 = new Cliente("João Henrique","asdasd","asdas");
+			   
+			   clientes.add(u1);
+		   } 
+		   
+		   request.setAttribute("clientes", clientes);
+		   
+		   RequestDispatcher dp = request.getRequestDispatcher("/jsp/listCliente.jsp");
+		   dp.forward(request, response);
+   }
+	
+    public BuscaCliente(HttpServletRequest request, HttpServletResponse response) {
+        
+	   super();
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//processRequest(request, response);
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+}
