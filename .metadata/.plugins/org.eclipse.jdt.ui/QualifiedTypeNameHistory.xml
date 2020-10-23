@@ -3,11 +3,9 @@
 <fullyQualifiedTypeName name="org.apache.jasper.compiler.Node.DoBodyAction"/>
 <fullyQualifiedTypeName name="br.com.estudo.model.Usuario"/>
 <fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
-<fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 <fullyQualifiedTypeName name="br.com.estudo.model.Cliente"/>
 <fullyQualifiedTypeName name="com.estudo.model.Usuario"/>
-<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 <fullyQualifiedTypeName name="org.apache.jasper.runtime.HttpJspBase"/>
 <fullyQualifiedTypeName name="org.apache.jasper.runtime.JspSourceDependent"/>
 <fullyQualifiedTypeName name="java.util.Vector"/>
@@ -20,4 +18,10 @@
 <fullyQualifiedTypeName name="javax.servlet.jsp.JspFactory"/>
 <fullyQualifiedTypeName name="javax.servlet.ServletException"/>
 <fullyQualifiedTypeName name="com.estudo.exception.LoginFailedException"/>
+<fullyQualifiedTypeName name="com.estudo.util.GlobalcodeException"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.estudo.model.Cliente"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
