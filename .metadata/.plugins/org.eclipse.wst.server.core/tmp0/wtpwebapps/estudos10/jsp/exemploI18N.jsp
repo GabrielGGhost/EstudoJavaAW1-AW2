@@ -12,8 +12,8 @@
 	<h1>Teste JSTL fmt - i18n</h1>
 	Localização selecionada = ${param.language} <br/>
 	<fmt:setLocale value="${param.language}"/>
-		<fmt:bundle basename='${param.language}'>
-			<fmt:message key="teste"> </fmt:message>
+		<fmt:bundle basename="com.estudo.bundles.${param.language}" prefix="Login.">
+			<fmt:message key="mensagem.boasvindas"> </fmt:message>
 		</fmt:bundle>  
 </body>
 </html>
