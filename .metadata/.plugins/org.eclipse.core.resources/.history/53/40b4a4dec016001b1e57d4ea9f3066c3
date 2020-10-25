@@ -1,0 +1,37 @@
+package com.estudo.servlets;
+
+import java.util.List;
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.estudo.aw.dao.*;
+import com.estudo.model.*;
+import com.estudo.exception.GlobalcodeException;
+
+/**
+ * Servlet implementation class ListaClientes
+ */
+@WebServlet("/listaClientes")
+public class ListaClientes extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		try{
+			
+			ClienteDB cliente = new ClienteDB();
+			
+			List<Cliente> clientes = cliente.getAllClients();
+			
+		} catch(GlobalcodeException ex) {
+			//tratamento do erro
+		}
+	}
+
+
+}

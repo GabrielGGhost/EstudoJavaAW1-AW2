@@ -1,0 +1,72 @@
+package com.estudo.aw.dao;
+
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.List;
+
+import com.estudo.exception.GlobalcodeException;
+import com.estudo.model.Cliente;
+
+import java.util.ArrayList;
+
+
+public class ClienteDB implements ClienteDAO {
+
+    private final String INSERT_QUERY = "insert into produtos (nome,preco,marca) values (?,?,?)";
+    private final String SELECT_ALL_QUERY = "select * from produtos";
+    private final String SELECT_BY_ID_QUERY = "select * from produtos where id = ? ";
+    private final static String CREATE_TABLE = "CREATE TABLE IF NOT EXISTS produtos ( nome varchar(50) default NULL,  preco float(50,0) default NULL, marca varchar(50) default NULL,id smallint NOT NULL auto_increment,PRIMARY KEY  (id))";
+
+    @Override
+    public void save(Cliente p) throws GlobalcodeException {
+        Connection conn = null;
+        ResultSet rs = null;
+        PreparedStatement prepStmt = null;
+        try {
+            conn = ConnectionManager.getConexao();
+            prepStmt = conn.prepareStatement(INSERT_QUERY);
+            prepStmt.setString(1, p.getNome());
+            prepStmt.setDouble(2, p.getPreco());
+            prepStmt.setString(3, p.getMarca());
+            prepStmt.execute();
+        } catch (SQLException e) {
+            String msg = "[ProdutosDB][save(Produto p)]: " + e.getMessage();
+            GlobalcodeException ge = new GlobalcodeException(msg, e);
+            throw ge;
+        } finally {
+            ConnectionManager.closeAll(conn, prepStmt, rs);
+        }
+    }
+
+    @Override
+    public List<Cliente> getAllClients() throws GlobalcodeException {
+        Connection conn = null;
+        Statement stmt = null;
+        ResultSet rs = null;
+        List<Produto> listaProdutos = new ArrayList<Produto>();
+        try {
+            conn = ConnectionManager.getConexao();
+            stmt = conn.createStatement();
+            rs = stmt.executeQuery(SELECT_ALL_QUERY);
+            while (rs.next()) {
+                int id = rs.getInt("id");
+                String nome = rs.getString("nome");
+                String marca = rs.getString("marca");
+                double preco = rs.getFloat("preco");
+                Produto p = new Produto(id, nome, marca, preco);
+                listaProdutos.add(p);
+            }
+        } catch (SQLException e) {
+            String msg = "[ProdutosDB][getCatalogoProdutos()]: " + e.getMessage();
+            GlobalcodeException ge = new GlobalcodeException(msg, e);
+            throw ge;
+        } finally {
+            ConnectionManager.closeAll(conn, stmt, rs);
+        }
+        return listaProdutos;
+    }
+}
