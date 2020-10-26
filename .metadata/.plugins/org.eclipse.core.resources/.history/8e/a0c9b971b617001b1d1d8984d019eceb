@@ -1,0 +1,72 @@
+package com.estudo.dao;
+
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.List;
+
+import com.estudo.exception.GlobalcodeException;
+import com.estudo.model.Usuario;
+
+import java.util.ArrayList;
+
+
+public class UsuarioDB implements UsuarioDAO { 
+
+    private final String INSERT_QUERY = "insert into usuarios (nome,preco,marca) values (?,?,?)";
+    private final String SELECT_USERS_BY_EMAIL = "select * from usuarios where email like "+ "%" +"?" +"%;";
+
+    @Override
+    public void save(Usuario p) throws GlobalcodeException {
+        Connection conn = null;
+        ResultSet rs = null;
+        PreparedStatement prepStmt = null;
+        try {
+            conn = ConnectionManager.getConexao();
+            prepStmt = conn.prepareStatement(INSERT_QUERY);
+            prepStmt.setString(1, p.getNome());
+            prepStmt.setString(2, p.getTelefone());
+            prepStmt.setString(3, p.getEmail());
+            prepStmt.execute();
+        } catch (SQLException e) {
+            String msg = "[UsuariosDB][save(Usuariosc)]: " + e.getMessage();
+            GlobalcodeException ge = new GlobalcodeException(msg, e);
+            throw ge;
+        } finally {
+            ConnectionManager.closeAll(conn, prepStmt, rs);
+        }
+    }
+
+    @Override
+    public List<Usuario> getAllUsuarios(String sufixo) throws GlobalcodeException {
+        Connection conn = null;
+        PreparedStatement prepStmt = null;
+        ResultSet rs = null;
+        List<Usuario> listaClientes = new ArrayList<Usuario>();
+        try {
+            conn = ConnectionManager.getConexao();
+            prepStmt = conn.prepareStatement(SELECT_USERS_BY_EMAIL);
+            prepStmt.setString(1, sufixo);
+            rs = prepStmt.executeQuery();
+            while (rs.next()) {
+                int id = rs.getInt("id");
+                String nome = rs.getString("nome");
+                String endereco = rs.getString("endereco");
+                String telefone = rs.getString("telefone");
+                String email = rs.getString("email");
+                Usuario p = new Usuario(nome, endereco, telefone, email);
+                listaClientes.add(p);
+            }
+        } catch (SQLException e) {
+            String msg = "[UsuariosDB][getAllUsuarios()]: " + e.getMessage();
+            GlobalcodeException ge = new GlobalcodeException(msg, e);
+            throw ge;
+        } finally {
+            ConnectionManager.closeAll(conn, prepStmt, rs);
+        }
+        return listaClientes;
+    }
+}

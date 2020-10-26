@@ -1,0 +1,8 @@
+package com.estudo.controller;
+
+
+@WebServlet("BuscaUsuarios")
+public class BuscaUsuarios extends HttpServlet {
+
+
+}

@@ -1,0 +1,60 @@
+package com.estudo.controller;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class BuscaUsuarios
+ */
+@WebServlet("/BuscaUsuarios")
+public class BuscaUsuarios extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public BuscaUsuarios() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
+	
+	private void doAction(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, GlobalcodeException {
+		String sufixoEmail = request.getParameter("sufixoEmail");
+		
+		if(sufixoEmail != null){
+			
+			GerenciadorUsuarios ger = new GerenciadorUsuarios();
+			List<Usuario> usuarios = ger.getUsuariosByEmail(sufixoEmail);
+			
+			request.setAttribute("users", usuarios);
+			
+			request.getRequestDispatcher("/formularioPesquisa.jsp").forward(request, response);
+		} else {
+			
+			request.getRequestDispatcher("/formularioPesquisa.jsp").forward(request, response);
+		}
+
+		
+	}
+}

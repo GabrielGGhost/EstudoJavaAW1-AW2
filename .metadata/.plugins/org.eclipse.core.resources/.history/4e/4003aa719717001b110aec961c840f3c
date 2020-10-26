@@ -1,0 +1,5 @@
+package com.estudo.model;
+
+public class GerenciadorUsuarios {
+
+}

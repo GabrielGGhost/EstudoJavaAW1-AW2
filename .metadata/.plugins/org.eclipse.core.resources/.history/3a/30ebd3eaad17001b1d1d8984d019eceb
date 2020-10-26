@@ -1,0 +1,14 @@
+package com.estudo.controller;
+
+
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+
+
+@WebServlet("BuscaUsuarios")
+public class BuscaUsuarios extends HttpServlet {
+
+
+}

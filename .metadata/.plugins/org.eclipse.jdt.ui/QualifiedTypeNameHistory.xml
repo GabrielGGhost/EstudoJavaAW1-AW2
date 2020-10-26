@@ -5,7 +5,6 @@
 <fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 <fullyQualifiedTypeName name="br.com.estudo.model.Cliente"/>
-<fullyQualifiedTypeName name="com.estudo.model.Usuario"/>
 <fullyQualifiedTypeName name="org.apache.jasper.runtime.HttpJspBase"/>
 <fullyQualifiedTypeName name="org.apache.jasper.runtime.JspSourceDependent"/>
 <fullyQualifiedTypeName name="java.util.Vector"/>
@@ -15,13 +14,21 @@
 <fullyQualifiedTypeName name="javax.servlet.jsp.SkipPageException"/>
 <fullyQualifiedTypeName name="javax.servlet.jsp.JspWriter"/>
 <fullyQualifiedTypeName name="javax.servlet.jsp.JspFactory"/>
-<fullyQualifiedTypeName name="javax.servlet.ServletException"/>
 <fullyQualifiedTypeName name="com.estudo.exception.LoginFailedException"/>
 <fullyQualifiedTypeName name="com.estudo.util.GlobalcodeException"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="com.estudo.model.Cliente"/>
-<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
-<fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="com.estudo.servlets.SalvaClienteAsync.CadastroAssincrono"/>
+<fullyQualifiedTypeName name="javax.servlet.AsyncContext"/>
+<fullyQualifiedTypeName name="javax.servlet.ServletResponse"/>
+<fullyQualifiedTypeName name="javax.servlet.ServletRequest"/>
+<fullyQualifiedTypeName name="com.estudo.model.Cliente"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+<fullyQualifiedTypeName name="javax.servlet.ServletException"/>
+<fullyQualifiedTypeName name="com.estudo.model.GerenciadorUsuarios"/>
+<fullyQualifiedTypeName name="com.estudo.exception.GlobalcodeException"/>
+<fullyQualifiedTypeName name="com.estudo.model.Usuario"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
 </qualifiedTypeNameHistroy>

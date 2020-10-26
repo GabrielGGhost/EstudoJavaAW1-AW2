@@ -1,0 +1,9 @@
+package com.estudo.model;
+
+public class Usuario {
+	
+	private String nome;
+	private String endereco;
+	private String telefone;
+	private String email;
+}

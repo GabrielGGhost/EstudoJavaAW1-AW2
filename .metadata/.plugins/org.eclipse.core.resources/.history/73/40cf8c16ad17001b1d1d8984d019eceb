@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	Digite o sufixo do email dos usuários desejados:
+	<form name="formPesquisa" action="/buscaUsuarios" method="get">
+		<input type="text" name="sufixoEmail"/>
+		<input type="submit" value="Pesquisar"/>
+	</form>
+</body>
+</html>

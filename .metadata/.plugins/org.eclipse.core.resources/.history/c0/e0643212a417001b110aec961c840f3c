@@ -1,0 +1,21 @@
+package com.estudo.model;
+
+import java.util.List;
+
+import com.estudo.dao.*;
+
+public class GerenciadorUsuarios {
+	
+	public List<Usuario> getUsuariosByEmail(String sufixo){
+		UsuarioDAO dao = new UsuarioDB();
+		return dao.getAllUsuarios(sufixo);
+	}
+	
+	public void cadastroUsuario(Usuario u){
+		//cadastramento
+	}
+	
+	public void removeUsuario(Usuario u){
+		//remover
+	}
+}

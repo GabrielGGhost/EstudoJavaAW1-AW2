@@ -1,0 +1,13 @@
+package com.estudo.controller;
+
+
+
+import javax.servlet.annotation.WebServlet;
+
+
+
+@WebServlet("BuscaUsuarios")
+public class BuscaUsuarios  {
+
+
+}

@@ -2,12 +2,16 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="_jspx_page_context" key="selection"/>
+		<item value="mensagem" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="mensagem"/>
+			<item value="count"/>
+			<item value="lista"/>
+			<item value="content"/>
 			<item value="_kspx_page_context"/>
 		</list>
 		<list key="replacehistory">
@@ -18,7 +22,7 @@
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="381" key="DIALOG_HEIGHT"/>
-		<item value="569" key="DIALOG_X_ORIGIN"/>
-		<item value="19" key="DIALOG_Y_ORIGIN"/>
+		<item value="760" key="DIALOG_X_ORIGIN"/>
+		<item value="8" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
