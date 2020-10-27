@@ -1,0 +1,3 @@
+<%@attribute name="titulo" required="true" rtexprvalue="true" %>
+
+<h1>${param.titulo}</h1>
