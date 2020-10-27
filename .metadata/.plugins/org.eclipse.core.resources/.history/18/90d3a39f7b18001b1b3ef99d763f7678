@@ -1,0 +1,3 @@
+<%@ tag language="java" pageEncoding="ISO-8859-1"%>
+<%@attribute name="nome" required="true" rtexprvalue="true" %>
+<%@attribute name="sexo" required="true" rtexprvalue="true" %>

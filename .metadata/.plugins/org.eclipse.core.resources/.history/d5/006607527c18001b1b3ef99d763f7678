@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Formulário Unicial</title>
+</head>
+<body>
+	<form action="/jsp/exemloTag.jsp">
+		Digite seu nome: <input type="text" name="txtNome"/><br/>
+		Sexo: <input type="radio" name="btSexo" value="F"/> Feminino
+		<input type="radio" name="btSexo" value="M"> Masculino<br>
+		<input type="submit" value="Enviar"/>
+		
+	
+	</form>
+</body>
+</html>
