@@ -8,7 +8,6 @@
 <fullyQualifiedTypeName name="org.apache.jasper.runtime.HttpJspBase"/>
 <fullyQualifiedTypeName name="org.apache.jasper.runtime.JspSourceDependent"/>
 <fullyQualifiedTypeName name="java.util.Vector"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="javax.servlet.jsp.PageContext"/>
 <fullyQualifiedTypeName name="javax.servlet.jsp.SkipPageException"/>
@@ -16,8 +15,6 @@
 <fullyQualifiedTypeName name="javax.servlet.jsp.JspFactory"/>
 <fullyQualifiedTypeName name="com.estudo.exception.LoginFailedException"/>
 <fullyQualifiedTypeName name="com.estudo.util.GlobalcodeException"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="com.estudo.servlets.SalvaClienteAsync.CadastroAssincrono"/>
 <fullyQualifiedTypeName name="javax.servlet.AsyncContext"/>
 <fullyQualifiedTypeName name="javax.servlet.ServletResponse"/>
@@ -27,8 +24,13 @@
 <fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
 <fullyQualifiedTypeName name="javax.servlet.ServletException"/>
 <fullyQualifiedTypeName name="com.estudo.model.GerenciadorUsuarios"/>
-<fullyQualifiedTypeName name="com.estudo.exception.GlobalcodeException"/>
 <fullyQualifiedTypeName name="com.estudo.model.Usuario"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.estudo.exception.GlobalcodeException"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
 </qualifiedTypeNameHistroy>

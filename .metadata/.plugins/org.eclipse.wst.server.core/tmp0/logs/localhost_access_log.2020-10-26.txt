@@ -109,3 +109,8 @@
 0:0:0:0:0:0:0:1 - - [26/Oct/2020:15:13:53 -0300] "GET /estudos15/BuscaUsuarios?sufixoEmail=hotmail HTTP/1.1" 200 302
 0:0:0:0:0:0:0:1 - - [26/Oct/2020:15:14:15 -0300] "GET /estudos15/BuscaUsuarios?sufixoEmail=e HTTP/1.1" 200 575
 0:0:0:0:0:0:0:1 - - [26/Oct/2020:15:14:21 -0300] "GET /estudos15/BuscaUsuarios?sufixoEmail=hoitmail HTTP/1.1" 200 443
+127.0.0.1 - - [26/Oct/2020:22:02:12 -0300] "GET / HTTP/1.1" 404 1076
+0:0:0:0:0:0:0:1 - - [26/Oct/2020:22:02:12 -0300] "GET /AW2-labs10/estudos16 HTTP/1.1" 404 1096
+0:0:0:0:0:0:0:1 - - [26/Oct/2020:22:02:52 -0300] "GET /AW2-labs10/estudos16/geraTelaLogin HTTP/1.1" 404 1110
+0:0:0:0:0:0:0:1 - - [26/Oct/2020:22:03:15 -0300] "GET /estudos16/geraTelaLogin HTTP/1.1" 200 588
+0:0:0:0:0:0:0:1 - - [26/Oct/2020:22:05:14 -0300] "GET /estudos16/geraTelaLogin HTTP/1.1" 200 589

@@ -1,0 +1,46 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" import="java.util.*" %>
+    
+    <%
+	    //Leitura de parâmetros que definem em qual idioma a pag será apresentada
+	    String pais = request.getParameter("coigoPais");
+	    String idioma = request.getParameter("codigoIdioma");
+	    
+	    //Obtenção da localização enviada pelo browser na request
+	    Locale theLocale = request.getLocale();
+	    
+	    if(pais != null && idioma != null)
+	    	//Criação do objeto locale com parâmetros recebidos pela request
+	    	theLocale = new Locale(idioma,pais);
+	    	String nomeArquivo = "com.estudo.i18n.Textos";
+	    
+	    	//Carregamento do arquivo de propriedades para localização theLocale
+	    	ResourceBundle bundle = ResourceBundle.getBundle(nomeArquivo, theLocale);
+    %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<!-- Obtenção do valor associado a textTitulo no idioma especificado -->
+<title><%=bundle.getString("textTitulo")%></title>
+</head>
+<body>
+	<!-- Impressão de dados na tela para acompanhamento -->
+	Pais = <%=theLocale.getCountry()%>
+	Idioma = <%=theLocale.getLanguage()%>
+	<br/><br/><br/>
+	<%=bundle.getString("textExplicacao")%>
+	<br/><br/>
+	<form name="formCadastroCliente" action="">
+		<!-- Obtenção dos valores associados aos textos no idoma especificado -->
+		<%=bundle.getString("textNome") %>
+		<input type="text" name="textNome"/><br>
+		
+		<%=bundle.getString("textEmail") %>
+		<input type="text" name="textEmail"/><br>
+		<input type="submit" value="<%=bundle.getString("textBotao") %>>"/><br>
+	</form>
+	<br/><br/><br/>
+</body>
+</html>
