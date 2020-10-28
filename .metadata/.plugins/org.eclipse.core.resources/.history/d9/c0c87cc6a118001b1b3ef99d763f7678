@@ -1,0 +1,10 @@
+var lastHilightedMenu = null;
+
+function menuHightligt(menuIndex){
+	menuDisapear();
+	var myDiv = document.getElementById("menu" + menuindex);
+	
+	//armazena qual o item de menu foi selecionado
+	lastHilightedMenu = myDiv;
+	myDiv.style.display="block";
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tlib-version>1.0</tlib-version>
+<short-name>exemplos</short-name>
+<uri>projetoURIexemplo</uri>
+<tag>MenuTag</tag>
+
+<name>arquivoPropriedades</name>
+<tag-class>com.projeto.I18N</tag-class>
+
+<required>true</required>

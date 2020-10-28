@@ -1,0 +1,17 @@
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<short-name>exemplos</short-name>
+	<uri>projetoURIexemplo</uri>
+	<tag>
+		<name>MenuTag</name>
+		<tag-class>com.projeto.I18N</tag-class>
+		<body-content>empty</body-content>
+		
+		<attribute>
+			<name>arquivoPropriedades</name>
+			<required>true</required>
+			<rtexprvalue>java.lang.String</rtexprvalue>
+			<required>true</required>
+		</attribute>
+	</tag>
+</taglib>

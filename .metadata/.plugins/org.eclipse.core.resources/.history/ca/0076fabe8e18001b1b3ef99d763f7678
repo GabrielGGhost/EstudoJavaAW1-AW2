@@ -1,0 +1,40 @@
+package com.projeto.tags;
+
+import java.util.ResourceBundle;
+
+import javax.servlet.jsp.JspException;
+import javax.servlet.jsp.JspWriter;
+import javax.servlet.jsp.tagext.SimpleTagSupport;
+
+public class MenuTag extends SimpleTagSupport{
+	
+	private String arquivoPropriedades;
+
+	public String getArquivoPropriedades() {
+		return arquivoPropriedades;
+	}
+
+	public void setArquivoPropriedades(String arquivoPropriedades) {
+		this.arquivoPropriedades = arquivoPropriedades;
+	}
+	
+	public void doTag() throws JspException {
+		
+		JspWriter out = getJspContext().getOut();
+		
+		try {
+			ResourceBundle menuBundle = ResourceBundle.getBundle(this.getArquivoPropriedades());
+			
+			String strNumeros = menuBundle.getString("menu.numero.itens");
+			
+			int numeroMenus = Integer.parseInt(strNumeros);
+			out.println("<table>");
+			for (int i = 0; i < numeroMenus; i++) {
+				String nomeMenu = menuBundle.getString("menu" + i + ".name");
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+	}
+}

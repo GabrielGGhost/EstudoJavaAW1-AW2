@@ -1,0 +1,17 @@
+enu.numero.itens = 4
+
+menu1.name=Cliente
+menu1.numero.subitens=3
+menu1.sub1=Adicionar Novo
+menu1.sub2=Listar Todos
+menu1.sub3=Remover
+
+menu2.name=Produtos
+menu2.numero.subitens=2
+menu2.sub1=Adicionar Novo
+menu2.sub2=Listar Todos
+
+menu3.name=Ajuda
+menu3.numero.subitens=2
+menu3.sub1=Ajuda Online
+menu3.sub2=Busca

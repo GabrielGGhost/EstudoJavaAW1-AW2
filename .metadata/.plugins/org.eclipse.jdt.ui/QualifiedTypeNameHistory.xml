@@ -8,10 +8,8 @@
 <fullyQualifiedTypeName name="org.apache.jasper.runtime.HttpJspBase"/>
 <fullyQualifiedTypeName name="org.apache.jasper.runtime.JspSourceDependent"/>
 <fullyQualifiedTypeName name="java.util.Vector"/>
-<fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="javax.servlet.jsp.PageContext"/>
 <fullyQualifiedTypeName name="javax.servlet.jsp.SkipPageException"/>
-<fullyQualifiedTypeName name="javax.servlet.jsp.JspWriter"/>
 <fullyQualifiedTypeName name="javax.servlet.jsp.JspFactory"/>
 <fullyQualifiedTypeName name="com.estudo.exception.LoginFailedException"/>
 <fullyQualifiedTypeName name="com.estudo.util.GlobalcodeException"/>
@@ -33,4 +31,9 @@
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
+<fullyQualifiedTypeName name="javax.servlet.jsp.tagext.SimpleTagSupport"/>
+<fullyQualifiedTypeName name="java.util.ResourceBundle"/>
+<fullyQualifiedTypeName name="javax.servlet.jsp.JspWriter"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="javax.servlet.jsp.JspException"/>
 </qualifiedTypeNameHistroy>

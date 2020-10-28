@@ -1,0 +1,61 @@
+package com.projeto.tags;
+
+import java.io.IOException;
+import java.util.ResourceBundle;
+
+import javax.servlet.jsp.JspException;
+import javax.servlet.jsp.JspWriter;
+import javax.servlet.jsp.tagext.SimpleTagSupport;
+
+public class MenuTag extends SimpleTagSupport{
+	
+	private String arquivoPropriedades;
+
+	public String getArquivoPropriedades() {
+		return arquivoPropriedades;
+	}
+
+	public void setArquivoPropriedades(String arquivoPropriedades) {
+		this.arquivoPropriedades = arquivoPropriedades;
+	}
+	
+	public void doTag() throws JspException {
+		
+		JspWriter out = getJspContext().getOut();
+		
+		try {
+			ResourceBundle menuBundle = ResourceBundle.getBundle(this.getArquivoPropriedades());
+			
+			String strNumeros = menuBundle.getString("menu.numero.itens");
+			
+			int numeroMenus = Integer.parseInt(strNumeros);
+			out.println("<table>");
+			for (int i = 0; i < numeroMenus; i++) {
+				String nomeMenu = menuBundle.getString("menu" + i + ".name");
+				out.println("<tr>");
+				out.println("<td>");
+				out.println("<a class='menuhandler' href='' onmouseover='menuHighlight(" + i + ")'>" + nomeMenu + " </a>");
+				out.println(" </td>");
+				
+				String strNumeroSubMenus = menuBundle.getString("menu" + i + ".numero.subitens");
+				
+				int numeroSubMenus = Integer.parseInt(strNumeroSubMenus);
+				out.println("<td>");
+				out.println("<div class='menu' id='menu' " + i + "'>");
+				out.println("<ul>");
+				for (int j = 0; j < numeroSubMenus; j++) {
+					String subMenu = menuBundle.getString("menu" + i + ".sub" + j);
+					out.println("<li><a href=''>" + subMenu + "</a></li>");
+				}
+				out.println("</ul>");
+				out.println("</div>");
+				out.println("</td>");
+				out.println("</tr>");
+				out.println("</table>");
+			}
+		} catch (IOException e) {
+			throw new JspException(e.getMessage());
+		}
+		
+	}
+}
