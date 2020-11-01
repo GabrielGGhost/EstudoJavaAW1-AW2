@@ -1,0 +1,28 @@
+package com.estudo.dao;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
+
+public class ClienteDAO {
+	
+	public static ClienteDAO instance = new ClienteDAO();
+	private Map bancoDados;
+	private ClienteDAO() {
+		
+		bancoDados = new HashMap();
+		
+		bancoDados.put("MG", new String[]{"Belo Horizonte", "Uberaba", "Uberlândia"});
+		bancoDados.put("RJ", new String[]{"Buzios", "Cabo Frio", "Rio de Janeiro"});
+		bancoDados.put("MG", new String[]{"Campinas", "Santos", "São Paulo"});
+	}
+	
+	public static ClienteDAO getInstance(){
+		return instance;
+	}
+	
+	public List getCidades(String estado){
+		String cidades = (String[]) bancoDados.get(estado);
+		return Arrays.asList(cidades);
+	}
+}

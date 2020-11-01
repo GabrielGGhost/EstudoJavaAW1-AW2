@@ -23,17 +23,22 @@
 <fullyQualifiedTypeName name="javax.servlet.ServletException"/>
 <fullyQualifiedTypeName name="com.estudo.model.GerenciadorUsuarios"/>
 <fullyQualifiedTypeName name="com.estudo.model.Usuario"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.estudo.exception.GlobalcodeException"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
-<fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
 <fullyQualifiedTypeName name="javax.servlet.jsp.tagext.SimpleTagSupport"/>
 <fullyQualifiedTypeName name="java.util.ResourceBundle"/>
 <fullyQualifiedTypeName name="javax.servlet.jsp.JspWriter"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="javax.servlet.jsp.JspException"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.estudo.dao.ClienteDAO"/>
 </qualifiedTypeNameHistroy>

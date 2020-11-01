@@ -1,0 +1,6 @@
+package com.estudo.dao;
+
+public class ClienteDAO {
+	
+	public static ClienteDAO instace = new ClienteDAO();
+}

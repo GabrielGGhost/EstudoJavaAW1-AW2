@@ -1,0 +1,5 @@
+package com.estudo.dao;
+
+public class ClienteDAO {
+
+}

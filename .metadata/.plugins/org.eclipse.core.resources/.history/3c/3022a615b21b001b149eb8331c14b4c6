@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Exemplo AJAX</title>
+<script>
+	request;
+	
+	function sendRequest(){
+		
+		//Determina o estado selecionado
+		combo = 1;
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

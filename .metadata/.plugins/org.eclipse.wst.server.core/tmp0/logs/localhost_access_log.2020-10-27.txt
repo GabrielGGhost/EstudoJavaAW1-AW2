@@ -218,3 +218,11 @@
 0:0:0:0:0:0:0:1 - - [27/Oct/2020:22:10:17 -0300] "GET /estudos20-projetinho/jsp/menu.js HTTP/1.1" 404 1108
 0:0:0:0:0:0:0:1 - - [27/Oct/2020:22:10:18 -0300] "GET /estudos20-projetinho/jsp/exemploSimpleTag.jsp HTTP/1.1" 200 1151
 0:0:0:0:0:0:0:1 - - [27/Oct/2020:22:10:18 -0300] "GET /estudos20-projetinho/jsp/menu.js HTTP/1.1" 404 1108
+0:0:0:0:0:0:0:1 - - [27/Oct/2020:23:25:50 -0300] "GET /estudos20-projetinho/jsp/exemploSimpleTag.jsp HTTP/1.1" 200 1151
+0:0:0:0:0:0:0:1 - - [27/Oct/2020:23:25:51 -0300] "GET /estudos20-projetinho/jsp/menu.js HTTP/1.1" 404 1108
+0:0:0:0:0:0:0:1 - - [27/Oct/2020:23:25:52 -0300] "GET /estudos20-projetinho/jsp/menu.js HTTP/1.1" 404 1108
+0:0:0:0:0:0:0:1 - - [27/Oct/2020:23:30:20 -0300] "GET /estudos20-projetinho/jsp/exemploSimpleTag.jsp HTTP/1.1" 200 1151
+0:0:0:0:0:0:0:1 - - [27/Oct/2020:23:30:20 -0300] "GET /estudos20-projetinho/jsp/menu.js HTTP/1.1" 404 1108
+0:0:0:0:0:0:0:1 - - [27/Oct/2020:23:31:09 -0300] "GET /estudos20-projetinho/jsp/exemploSimpleTag.jsp HTTP/1.1" 500 6837
+0:0:0:0:0:0:0:1 - - [27/Oct/2020:23:31:30 -0300] "GET /estudos20-projetinho/jsp/exemploSimpleTag.jsp HTTP/1.1" 200 1151
+0:0:0:0:0:0:0:1 - - [27/Oct/2020:23:31:31 -0300] "GET /estudos20-projetinho/jsp/menu.js HTTP/1.1" 404 1108

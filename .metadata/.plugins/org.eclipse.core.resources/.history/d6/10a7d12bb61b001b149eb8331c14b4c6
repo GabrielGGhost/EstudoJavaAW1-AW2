@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Exemplo AJAX</title>
+<script>
+	var request;
+	
+	function sendRequest(){
+		
+		//Determina o estado selecionado
+		combo = document.getElementById("estadp");
+		estado = combo.options[combo.selectedIndex].value;
+		
+		//Retorna quando nenhum estado for selecionado
+		if (estado == "-1"){
+			return;
+		}
+		
+		//Momta a url de requisição para o servidor
+		url = "cadastrarCliente?action=preencherCidades&estado=" + estado;
+		
+		//Inicializa o objeto XLMHttpRequest
+		request = new XMLHttpRequest();
+		
+		//Determina a função para processamento da requisição
+		request.onload = processRequest;
+		
+		//Configura a requisição
+		request.opem("GET", url, true);
+		
+		//Envia a requisição
+		request.send();
+	}
+	
+	function processRequest(){
+		//Faz a leitura do documento XML recebido
+		var response = request.responseXML;
+		
+		var RAIZ = response.getElementsByTagName("cidades").item(0);
+		var cidades = raiz.getElementsByTagName("cidade");
+		
+		//Preenche a caixa de opções com os valores recebidos
+		for (var int = 0; int < cidades.length; int++) {
+			var txtCidade = cidades.item(i).firstChield.data;
+			var option = new Option(txtCidade);
+			selectNode.add(option, null);
+		}
+	}
+</script>
+</head>
+<body>
+	<h1>Cadastro de Clientes</h1>
+	<form action='cadastrarCliente"%>' method='post'>
+		<fieldset>
+			<legend>Dados do cliente</legend>
+			<table>
+				<tr>
+					<td><label for='nome'>Nome:</label></td>
+					<td colspan='3'><input name='nome' id='nome' type='text' size='75' maxlength='255'/></td>
+				</tr>
+				<tr>
+					<td><label for='telefone'>Telefone: (0000-0000)</label></td>
+					<td><input name='telefone' id='telefone' type='text' size='37'/></td>
+				</tr>
+			</table>
+		</fieldset>
+		<fieldset>
+			<legend></legend>
+			<table>
+				<tr>
+					<td><label for='rua'>Rua/Av:</label></td>
+					<td><input name='rua' id='rua' type='text' size='40' maxlength="255"/></td>
+
+					<td><label for='numero'>Número:</label></td>
+					<td><input name='numero' id='numero' type='text' size='8' maxlength="5"/></td>
+				</tr>
+				<tr>
+					<td><label for='bairro'>Bairro::</label></td>
+					<td><input name='bairro' id='bairro' type='text' /></td>
+
+					<td><label for='cep'>Cep:</label></td>
+					<td><input name=''cep'' id=''cep'' type='text' size='8'/></td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Exemplo AJAX</title>
+<script>
+	var request;
+	
+	function sendRequest(){
+		
+		//Determina o estado selecionado
+		combo = document.getElementById("estadp");
+		estado = combo.options[combo.selectedIndex].value;
+		
+		//Retorna quando nenhum estado for selecionado
+		if (estado == "-1"){
+			return;
+		}
+		
+		//Momta a url de requisição para o servidor
+		url = "cadastrarCliente?action=preencherCidades&estado=" + estado;
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

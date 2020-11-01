@@ -1,0 +1,16 @@
+package com.estudo.dao;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class ClienteDAO {
+	
+	public static ClienteDAO instace = new ClienteDAO();
+	private Map bancoDados;
+	private ClienteDAO() {
+		
+		bancoDados = new HashMap();
+		
+		bancoDados.put("MG", new String[]{"Belo Horizonte", "Uberaba", "Uberlândia"});
+	}
+}
